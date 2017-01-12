@@ -1,0 +1,98 @@
+html,
+body {
+  padding: 0;
+  margin: 0; }
+
+.wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  padding: 20px; }
+
+.todoCreator {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+  -ms-flex-negative: 0;
+      flex-shrink: 0; }
+  .todoCreator__name, .todoCreator__discription {
+    display: block;
+    padding: 0 15px;
+    margin-bottom: 10px;
+    border: 1px solid #999;
+    border-radius: 4px;
+    box-shadow: none;
+    font-size: 16px; }
+  .todoCreator__name {
+    line-height: 22px; }
+  .todoCreator__discription {
+    resize: none;
+    padding: 5px 15px; }
+
+.todo-continer-to-center {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start; }
+
+.todo-container {
+  margin-left: 20px;
+  border-collapse: collapse; }
+  .todo-container thead tr td {
+    min-width: 150px;
+    border-bottom: 1px solid #999; }
+  .todo-container tbody tr:nth-child(even) td {
+    background: rgba(0, 0, 0, 0.05); }
+  .todo-container tbody tr td {
+    padding: 5px 0; }
+
+.sort-btn {
+  cursor: pointer; }
+  .sort-btn:hover {
+    background: rgba(0, 0, 0, 0.1); }
+
+.remove-head-td {
+  min-width: 30px !important; }
+
+.remove-btn-wrap {
+  position: relative;
+  min-width: 30px;
+  cursor: pointer; }
+  .remove-btn-wrap:before, .remove-btn-wrap:after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 2px;
+    height: 18px;
+    background: #999; }
+  .remove-btn-wrap:before {
+    -webkit-transform: translateX(-50%) translateY(-50%) rotate(45deg);
+            transform: translateX(-50%) translateY(-50%) rotate(45deg); }
+  .remove-btn-wrap:after {
+    -webkit-transform: translateX(-50%) translateY(-50%) rotate(-45deg);
+            transform: translateX(-50%) translateY(-50%) rotate(-45deg); }
+  .remove-btn-wrap:hover:before, .remove-btn-wrap:hover:after {
+    background: red; }
