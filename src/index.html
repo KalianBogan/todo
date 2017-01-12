@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>TODO</title>
+  <link href="css/style.css" rel="stylesheet">
+</head>
+<body>
+  <div class="wrapper">
+   
+    <form class="todoCreator" action="">
+      <input class="todoCreator__name" type="text" required placeholder="Имя">
+      <textarea class="todoCreator__discription" cols="30" rows="4" required placeholder="Что сделать"></textarea>
+      <input type="submit" value="Создать">
+    </form>
+    
+    <div class="todo-continer-to-center">
+    
+      <table class="todo-container">
+        <thead>
+          <tr>
+            <td class="num-sort-btn sort-btn">Номер</td>
+            <td class="name-sort-btn sort-btn">Имя</td>
+            <td>Что сделать</td>
+            <td class="remove-head-td"></td>
+          </tr>
+        </thead>
+      </table>
+      
+    </div>
+    
+  </div>
+  <script src="js/index.js"></script>
+</body>
+</html>
